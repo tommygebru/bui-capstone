@@ -1,0 +1,411 @@
+/* Site Stylesheet
+  1. Global Styles
+  2. Typography Styles
+  3. Structure Styles
+  4. Module Styles
+  5. Component Styles
+  6. Page Styles
+======================================== */
+
+/* 1. Global Styles
+======================================== */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0 auto;
+  overflow-x: hidden;
+  width: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0 auto;
+  overflow-x: hidden;
+  width: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+}
+.clearfix::after {
+  content: " ";
+  clear: both;
+  display: table;
+}
+
+/* 2. Typography Styles
+======================================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 15px;
+  transition: font-size 0.25s ease;
+}
+h1 {
+  font-size: calc(80px / 1.2);
+  line-height: 0.85;
+  text-align: center;
+  margin: 0.5em auto;
+  width:90%;
+}
+h2 {
+  font-size: calc(42px / 1.2);
+  margin-top: 10px;
+  line-height: 0.85;
+}
+h3 {
+  font-size: calc(24px / 1.2);
+  margin-top: 10px;
+  line-height: 1;
+}
+@media(min-width: 1024px) {
+  h1 {
+    font-size: 80px;
+  }
+  h2 {
+    font-size: 42px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+}
+p {
+  font-family: Raleway, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 23px;
+  margin: 0 0 15px;
+}
+a {
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #333333;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+li {
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 23px;
+  list-style: none;
+}
+img {
+  width: 100%;
+}
+
+/* 3. Structure Styles
+======================================== */
+.intro, .content, .footer-related {
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 0 15px;
+}
+.intro:before, .intro:after, .content:before, .content:after, .footer-related:before, .footer-related:after, blockquote:before, blockquote:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+/* 4. Modules Styles
+======================================== */
+
+/* Site Navigation */
+header {
+  background-color: rgba(255,248,184,0.1);
+  border-bottom: 5px solid rgba(255,248,184,1);
+  margin-bottom: 2em;
+}
+.site-navigation {
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 30px 1em;
+}
+.site-header-left {
+  display: inline-block;
+}
+.site-header-left li {
+  display:none;
+}
+.site-header-left li a {
+  text-decoration: none;
+  font-family: Raleway, Arial, sans-serif;
+}
+.site-header-left li.logo {
+  display: inline-block;
+  text-transform: uppercase;
+}
+.site-header-left li.logo a {
+  color: #EB4A34;
+  font-family: "Barlow Condensed", Georgia, serif;
+  font-size: 1.3em;
+}
+.site-header-left li.logo a span {
+  font-weight: 800;
+  color: #A2F3E6;
+}
+.site-header-right {
+  display: inline-block;
+  float: right;
+}
+.site-header-right li,
+.footer-right li {
+  display: inline;
+}
+.site-header-right li a {
+  text-decoration: none;
+  margin-left: 20px;
+  margin-top: -15px;
+  font-family: Raleway, Arial, sans-serif;
+}
+
+/* Site Footer */
+.footer {
+  padding: 30px;
+  text-align: center;
+}
+
+/* 5. Component Styles
+======================================== */
+.button-primary {
+  color: #457D74;
+  background-color: transparent;
+  float: left;
+  background-color: #A2F3E6;
+  line-height: normal;
+  text-align: center;
+  text-decoration: none;
+  transition: opacity 0.5s ease;
+  letter-spacing: 1px;
+  padding: 15px 20px;
+}
+.button-primary:hover {
+  opacity: 0.75;
+}
+
+/* 6. Page Styles
+======================================== */
+.photo-hero {
+  width: 100%;
+  height: auto;
+}
+p.tag {
+  text-align: center;
+  margin: 0 auto 2em;
+  border-bottom: 1px solid #44E6CC;
+  width: 120px;
+  padding-bottom: 0.25em;
+  text-transform: uppercase;
+  font-family: "Barlow Condensed", Arial, sans-serif;
+  font-size: 18px;
+}
+.intro {
+  padding: 4.5em 0;
+}
+.intro p {
+  width: 90%;
+  margin: 0 auto 1em;
+  display: block;
+  line-height: 1.6;
+}
+.first-letter {
+  float: left;
+  padding-right: 10px;
+  font-family: "Playfair Display", Arial, sans-serif;
+  font-size: 7.2em;
+  color: #A2F3E6;
+  line-height: 0.7;
+  font-weight: 900;
+}
+.intro a {
+  margin: 20px 0 0;
+  display: block;
+  text-decoration: none;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #EB4A34;
+}
+.photos {
+
+}
+.photo-split {
+  display: block;
+  width: 100%;
+  margin: 0 0 -5px;
+  padding: 0;
+  float: left;
+}
+.photo-caption {
+  background-color: #FFF8F1;
+  text-align: center;
+  padding: 0.5em 0;
+  clear: both;
+  position: relative;
+  top: -5px;
+  font-family: Raleway, Arial, sans-serif;
+}
+
+.content {
+  padding: 4.5em 0;
+}
+
+.bio {
+  width: 90%;
+  vertical-align: top;
+  position: relative;
+  margin: 0 auto;
+}
+img.bio-avatar {
+  border-radius: 100%;
+  height: 60px;
+  width: 60px;
+  margin-right: 10px;
+  display: inline-block;
+  float: left;
+}
+.bio-title p {
+  display: block;
+  font-style: normal;
+  font-size: 14px;
+}
+.bio-intro {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 24px;
+  margin-bottom: 0px;
+}
+.bio-intro span {
+  text-transform: uppercase;
+  display: block;
+  color: #EB4A34;
+  font-size:12px;
+}
+.bio p {
+  font-family: italic;
+  font-size: 12px;
+  line-height: 1.4;
+}
+p.bio-intro {
+  font-family: "Barlow Condensed", Arial, sans-serif;
+  line-height: 1;
+  font-style: normal;
+}
+.article-content {
+  width: 90%;
+  display: block;
+  vertical-align: top;
+  margin: 2em auto;
+}
+.article-content p {
+font-size: 16px;
+line-height: 1.6;
+}
+
+blockquote {
+  position: relative;
+  padding: 3em 0;
+  margin: 0 auto;
+  display: block;
+  width: 90%;
+}
+blockquote p {
+  font-family: "Playfair Display", Arial, sans-serif;
+  font-style: italic;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: left;
+  color: #333;
+}
+blockquote p:after {
+  content: " ";
+  width: 100%;
+  height: 20px;
+  background-color: rgba(162,243,230,0.2);
+  display: block;
+  z-index: -1;
+  margin-top:-20px;
+}
+blockquote > footer {
+  font-family: "Barlow Condensed", Arial, sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: right;
+  color: #333;
+}
+.footer {
+  border-top: 10px solid #FFF8F1;
+}
+.related-post {
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+.related-post img {
+
+}
+
+
+@media (min-width: 585px) {
+
+}
+@media (min-width: 720px) {
+
+}
+@media (min-width: 1024px) {
+  .site-header-left li {
+    line-height: 1;
+    margin: 0 1em;
+    display: inline-block;
+  }
+  .intro p {
+    width: 46%;
+    margin: 0 2%;
+    display: inline-block;
+    float: left;
+  }
+  .intro a {
+    margin: 20px 0 0;
+    text-decoration: none;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+  .bio {
+    width: 18%;
+    vertical-align: top;
+    position: absolute;
+  }
+  .photo-split {
+    display: inline-block;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    float: left;
+  }
+  .article-content {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 25%;
+    margin: 0;
+  }
+  blockquote {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .related-post {
+    width: 48%;
+    display: inline-block;
+    float: left;
+    margin: 0 1%;
+    text-align: left;
+  }
+}

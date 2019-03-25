@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<title>Codecademy | Color For UI</title>
+
+		<!-- Meta -->
+		<meta charset="utf-8">
+		<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1 user-scalable=no">
+
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+	</head>
+	<body>
+		<!-- Site Wide Header -->
+		<header aria-label="site-wide-navigation" class="site-header">
+			<div class="container">
+				<nav role="navigation" aria-label="navigation" class="site-header-nav">
+					<ul class="site-nav-left">
+						<li>
+							<a href="#">
+								<img src="images/logo.svg" class="logo" />
+							</a>
+						</li>
+						<li>
+							<a href="#" class="site-nav-link" aria-label="site-wide-search-button" role="button">
+								<img src="images/icon-search.svg" />
+							</a>
+						</li>
+					</ul>
+					<ul class="site-nav-right">
+						<li>
+							<a href="#" class="button button-primary button-small site-nav-link">Browse all Events</a>
+						</li>
+						<li>
+							<div class="chip">
+								<div class="chip-img-container">
+									<h5>JS</h5>
+								</div>
+								<div class="chip-content-container">
+									<div class="chip-content-title">
+										Joe Shmoe
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="site-nav-mobile">
+						<li>
+							<a href="#" class="button button-secondary button-small site-nav-link">Menu</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<!-- Site Main Content -->
+		<main class="site-main">
+			<header aria-labelledby="page-title" class="clearfix site-main-header">
+				<div class="container">
+					<h1 id="page-title">Ticket Details</h1>
+					<p>Please enter your information below. All fields are required.</p>
+				</div>
+			</header>
+			<section aria-label="ticket-information" class="site-main-section">
+				<div class="container">
+					<div class="ticket-container">
+						<div class="card clearfix">
+							<div class="ticket-content">
+								<div class="ticket-content-section-header">
+									<small>your ticket for</small>
+									<h2>Amy Poehler</h2>
+								</div>
+								<div class="ticket-content-left col-1-2">
+									<div class="ticket-content-section">
+										<div class="ticket-content-item">
+											<img src="images/icon-calendar.svg">
+										</div>
+										<div class="ticket-content-item">
+											<small>Event Date</small>
+											<h3>29 May 2018</h3>
+										</div>
+									</div>
+									<div class="ticket-content-section">
+										<div class="ticket-content-item">
+											<img src="images/icon-location.svg">
+										</div>
+										<div class="ticket-content-item">
+											<small>Location</small>
+											<h3>Cleveland, OH</h3>
+										</div>
+									</div>
+								</div>
+								<div class="ticket-content-right col-1-2">
+									<div class="ticket-content-section">
+										<small>Price</small>
+										<h3>$75</h3>
+									</div>
+									<div class="ticket-content-section">
+										<small>quantity</small>
+										<h3>2 Tickets</h3>
+									</div>
+								</div>
+							</div>
+							<div class="ticket-info">
+								<div class="ticket-content-section">
+									<small>General Admission</small>
+								</div>
+								<div class="ticket-content-section">
+									<img src="images/qrcode.png" class="ticket-content-code">
+									<small class="ticket-content-code">Note: QR code will not work until payment has been processed</small>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section aria-label="Form" class="site-main-section">
+				<div class="container checkout-container">
+					<figure class="alert alert-general">
+						<div class="alert-content">
+							<img src="images/icon-help.svg"/>
+							<p>Complete the form to print your ticket</p>
+						</div>
+					</figure>
+					<h2>1. Billing Info</h2>
+					<form role="form" class="form">
+						<fieldset>
+							<label>Full Name</label>
+							<input type="text" placeholder="First name" class="col-1-2">
+							<input type="text" placeholder="Last name" class="col-1-2">
+						</fieldset>
+						<div>
+							<label>Email Address</label>
+							<input type="text" placeholder="Email">
+						</div>
+						<fieldset>
+							<div>
+								<label>address</label>
+								<input type="text" placeholder="Street">
+							</div>
+							<div>
+								<input type="text" placeholder="City" class="col-1-3">
+								<input type="text" placeholder="State" class="col-1-3">
+								<input type="text" placeholder="Zip" class="col-1-3">
+							</div>
+						</fieldset>
+					</form>
+					<h2>2. Payment Method</h2>
+					<form role="form" class="form">
+						<fieldset>
+							<label>Credit Card Information</label>
+							<div>
+								<input type="text" placeholder="Credit Card Number">
+							</div>
+							<div>
+								<input type="month" placeholder="Expiration Date" class="col-1-2" >
+								<input type="text" placeholder="CVV" class="col-1-2" >
+							</div>
+						</fieldset>
+						<div>
+							<input type="submit" value="Submit" class="button button-secondary float-right" />
+						</div>
+					</form>
+				</div>
+			</section>
+			<div class="site-main-background" aria-hidden="true"></div>
+		</main>
+		<!-- Site Wide Footer -->
+		<footer class="footer">
+			<div class="container">
+				<nav role="navigation" class="clearfix">
+					<ul class="col-1-4 footer-section">
+						<li>
+							<img src="images/logo.svg" class="logo" />
+						</li>
+						<li>
+							<p><smalL>All Rights Reserved | &copy; <time>2017</time></smalL></p>
+						</li>
+					</ul>
+					<div class="col-1-4 footer-section" aria-labelledby="product-pages">
+						<p id="product-pages"><b>About</b></p>
+						<ul>
+							<li>
+								<a href="#">Features</a>
+							</li>
+							<li>
+								<a href="#">Pricing</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-1-4 footer-section" aria-labelledby="support-pages">
+						<p id="support-pages"><b>Support</b></p>
+						<ul>
+							<li>
+								<a href="#">FAQ</a>
+							</li>
+							<li>
+								<a href="#">Customer Service</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-1-4 footer-section" arai-labelledby="social-links">
+						<p id="support-pages"><b>Stay Up To Date</b></p>
+						<form role="form">
+							<input type="email" placeholder="Your email address" class="footer-email-input">
+							<input type="submit" value="Submit" class="button button-primary footer-email-button"/>
+						</form>
+					</div>
+				</nav>
+			</div>
+		</footer>
+	</body>
+</html>
